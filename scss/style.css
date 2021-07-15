@@ -61,7 +61,7 @@ a {
   align-content: center;
 }
 .nav__item {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .nav__link, .nav__logo, .nav__toggle {
   color: #161212;
@@ -95,6 +95,20 @@ a {
 }
 .show-menu {
   top: calc(1rem + 3rem);
+}
+
+.active-item {
+  position: relative;
+}
+.active-item::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #161212;
 }
 
 /*# sourceMappingURL=style.css.map */

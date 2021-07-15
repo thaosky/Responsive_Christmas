@@ -14,7 +14,7 @@
   align-content: center;
 
   &__item {
-    margin-bottom: $mb-3;
+    margin-bottom: $mb-4;
   }
 
   &__link, &__logo, &__toggle {
@@ -54,4 +54,21 @@
 //------- Show menu -------
 .show-menu {
   top: calc(1rem + #{$header-height});
+}
+
+//------- Active item selected -------
+.active-item {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $title-color;
+  }
 }
