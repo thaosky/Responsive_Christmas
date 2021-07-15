@@ -1,0 +1,57 @@
+.layout-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $body-color;
+}
+
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &__item {
+    margin-bottom: $mb-3;
+  }
+
+  &__link, &__logo, &__toggle {
+    color: $title-color;
+    font-weight: $font-semi-bold;
+  }
+
+  &__logo:hover, &__link:hover {
+    color: $first-color;
+    transition: 0.3s;
+  }
+
+  &__toggle {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    z-index: $z-fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0 0;
+    background-color: $body-color;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+    border-radius: 2rem;
+    transition: 0.5s;
+  }
+}
+
+//------- Show menu -------
+.show-menu {
+  top: calc(1rem + #{$header-height});
+}
