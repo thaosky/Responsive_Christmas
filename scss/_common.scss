@@ -1,0 +1,23 @@
+.sky-container {
+  max-width: 968px;
+  width: calc(100% - 5rem);
+}
+
+.sky-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: #FFFFFF;
+  font-weight: $font-semi-bold;
+  padding: 1.5rem 2rem;
+  border-radius: 0.8rem;
+
+  &:hover {
+    background-color: $first-color-alt;
+    transition: 0.3s;
+  }
+}

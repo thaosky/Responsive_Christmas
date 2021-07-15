@@ -21,6 +21,11 @@ body {
   line-height: 1.6;
   margin-top: 3rem;
 }
+@media screen and (min-width: 968px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
 
 h1, h2, h3, ul, p {
   margin: 0;
@@ -40,9 +45,37 @@ h1, h2, h3 {
   font-weight: 600;
   font-size: 2rem;
 }
+@media screen and (min-width: 968px) {
+  h1, h2, h3 {
+    font-size: 2.8rem;
+  }
+}
 
 a {
   text-decoration: none;
+}
+
+.sky-container {
+  max-width: 968px;
+  width: calc(100% - 5rem);
+}
+
+.sky-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #DA2535;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  border-radius: 0.8rem;
+}
+.button:hover {
+  background-color: #CA2130;
+  transition: 0.3s;
 }
 
 .layout-header {
@@ -109,6 +142,43 @@ a {
   height: 5px;
   border-radius: 50%;
   background: #161212;
+}
+
+.home__img {
+  width: 28rem;
+  justify-self: center;
+}
+.home__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 968px) {
+  .home__title {
+    font-size: 5rem;
+  }
+}
+.home__description {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home__container {
+    padding: 11rem 3rem 0;
+  }
+}
+.layout-main {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

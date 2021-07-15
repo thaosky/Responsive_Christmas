@@ -1,0 +1,38 @@
+.home {
+  &__container {
+
+  }
+
+  &__img {
+    width: 28rem;
+    justify-self: center;
+  }
+
+  &__title {
+    //font-size: $biggest-font-size;
+    @include biggest-font-size();
+    font-weight: $font-bold;
+    margin-bottom: $mb-3;
+  }
+
+  &__description {
+    margin-bottom: $mb-3;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home__container {
+    padding: 11rem 3rem 0;
+  }
+}
